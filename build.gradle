@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group 'com.mark.task'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.postgresql:postgresql'
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.714'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-logging'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2'
+}
